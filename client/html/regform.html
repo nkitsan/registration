@@ -7,20 +7,26 @@
 </head>
 <body>
     <nav>
+        <span>Log In</span>
+        <span>Sign Up</span>
     </nav>
     <form>
         <div class="container">
             <div class="photo-input">
-                <img class="user-pic" src="../img/userpic.png"/>
-                <input class="user-pic-input" type="file" name="photo">
+                <div class="img-container">
+                    <img class="user-pic" src="../img/userpic.png"/>
+                </div>
+                <input class="user-pic-input" type="file" name="photo" accept=".jpg, .jpeg, .png">
             </div>
             <div class="info-input">
                 <input type="text" name="nickname" required="required" placeholder="Input a nickname">
-                <input type="text" name="number" required="required" placeholder="Input a phone number">
-                <input type="password" name="password" required="required" placeholder="Input a password">
+                <input type="text" name="number"
+                       pattern="^(\d{3})[\-\s]?(\(\d{2}\))[\-\s]?(\d{3})[\-\s]?(\d{2})[\-\s]?(\d{2})$"
+                       required="required" placeholder="Input a phone number">
+                <input type="password" name="password" minlength="8" required="required" placeholder="Input a password">
             </div>
         </div>
-        <input type="submit" value="Register">
+        <input type="submit" value="Sign Up">
     </form>
     <script src="../js/regform.js"></script>
 </body>
