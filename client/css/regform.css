@@ -1,7 +1,27 @@
-nav {
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
     display: flex;
-    justify-items: flex-end;
-    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+nav span{
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 form{
@@ -32,26 +52,25 @@ form{
     height: 300px;
 }
 
-.user-pic {
+.user-pic{
     -webkit-clip-path: circle(150px at 50% 50%);
     clip-path: circle(150px at 50% 50%);
     max-width: 600px;
     max-height: 300px;
 }
 
-::-webkit-file-upload-button {
+::-webkit-file-upload-button{
     margin: 10px 0px;
     background-color: aquamarine;
     border: none;
     border-radius: 10px;
-    width: 130px;
-    height: 30px;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
 .info-input input{
     margin: 5px 0px;
-    height: 20px;
+    padding: 5px 10px;
 }
 
 input[type="submit"]{
@@ -59,7 +78,6 @@ input[type="submit"]{
     background-color: aquamarine;
     border: none;
     border-radius: 10px;
-    width: 80px;
-    height: 30px;
+    padding: 5px 10px;
     cursor: pointer;
 }
