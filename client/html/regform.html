@@ -11,15 +11,17 @@
     <form>
         <div class="container">
             <div class="photo-input">
-                <input type="file" name="photo">
+                <img class="user-pic" src="../img/userpic.png"/>
+                <input class="user-pic-input" type="file" name="photo">
             </div>
             <div class="info-input">
-                <input type="text" name="nickname" required="required" placeholder="Input your nickname">
-                <input type="email" name="email" required="required" placeholder="Input your email">
-                <input type="text" name="phone" required="required" placeholder="Input your phone number">
+                <input type="text" name="nickname" required="required" placeholder="Input a nickname">
+                <input type="text" name="number" required="required" placeholder="Input a phone number">
+                <input type="password" name="password" required="required" placeholder="Input a password">
             </div>
         </div>
         <input type="submit" value="Register">
     </form>
+    <script src="../js/regform.js"></script>
 </body>
 </html>
